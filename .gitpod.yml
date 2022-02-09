@@ -20,6 +20,6 @@ github:
 tasks:
   - init: |
       python3 -m pip install -U pip
+      python3 -m pip install -U setuptools wheel
       python3 -m pip install -r requirements/dev.txt
-      export PIP_USER=false  # Work around https://github.com/gitpod-io/gitpod/issues/4886
       pre-commit install --install-hooks
